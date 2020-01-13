@@ -9,7 +9,6 @@ class Orders extends Component {
     loading: true
   }
   componentDidMount() {
-    console.log('sdfsdfsdfsdf===== 2')
     axios.get('/orders.json')
       .then(res => {
         const featchedOrders = [];
